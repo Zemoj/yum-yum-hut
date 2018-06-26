@@ -1,50 +1,72 @@
 {block name=page_css}
     <style>
         #carouselExampleFade{
-            max-width:800px;
+            max-width:1200px;
             margin-left: auto;
             margin-right: auto;
         }
         
         .jumbotron{
-            max-width:800px;
+            max-width:1200px;
             margin-left: auto;
             margin-right: auto;            
+        }
+        
+        .card-img.no-radius{
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+        
+        .card-text.art-attrib{
+            font-size: 0.75vw;
+            color: white;
         }
     </style>
 {/block}
 
 {block name=page_content}
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="assets/img/food-slide-1.jpg" alt="First slide">
+
+
+<div class="card feature border-dark mb-3">
+    <img class="card-img-top" src="assets/img/nurse-banner.png" alt="Donaar Propganda Banner by @Nurse_Normal">
+    <div class="card-body">
+        <h2 class="card-title bangers red-text">Big Daddy Donaar Blit'zen</h2>
+        <p class="card-text">Welcome to the Yum Yum Yut, where everything is the best! When you're here, you're family!</p>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/img/food-slide-2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/img/food-slide-3.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
 
-<div class="jumbotron">
-  <h1 class="display-4">Coming Soon!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<div class="card-deck">
+    <div class="card border-dark">
+        <h5 class="card-header">Food</h5>
+        <div class="card-body">
+            <p class="card-text">Eat the food!</p>
+        </div>
+        <div class="card-footer">
+                <a href="/food" class="btn btn-secondary">Go</a>
+        </div>
+    </div>
+    <div class="card border-dark">
+        <h5 class="card-header">Merch</h5>
+        <div class="card-body">
+            <p class="card-text">Buy the stuff!</p>
+        </div>
+        <div class="card-footer">
+            <a href="/merch" class="btn btn-secondary">Go</a>
+        </div>
+    </div>
+    <div class="card border-dark">
+        <h5 class="card-header">Employment</h5>
+        <div class="card-body">
+            <p class="card-text">Join the team!</p>
+        </div>
+        <div class="card-footer">
+            <a href="/jobs" class="btn btn-secondary">Go</a>
+        </div>
+    </div>
 </div>
+
 
 {/block}
 
